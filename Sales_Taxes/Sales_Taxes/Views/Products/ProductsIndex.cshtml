@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Models.ProductsModel>
+
+
+<div class="row col-6 col-md-6">
+    <input type="button" class="btn btn-primary" value=" Add Product" id="btnProducts" />
+</div>
+<br />
+@if (Model == null)
+{
+    <h1>No records found</h1>
+}
+else
+{
+    <div class="container">
+        <table id="tblProducts" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">@Html.DisplayNameFor(m => m.ProductId)</th>
+                    <th scope="col">@Html.DisplayNameFor(m => m.Description)</th>
+                    <th scope="col">@Html.DisplayNameFor(m => m.ListPrice)</th>
+                    <th scope="col">@Html.DisplayNameFor(m => m.Category)</th>
+                    <th scope="col">@Html.DisplayNameFor(m => m.IsImported)</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@item.ProductId</td>
+                    <td>@item.Description</td>
+                    <td>@item.ListPrice</td>
+                    <td>@item.Category</td>
+                    <td>@item.IsImported</td>
+                    <td>@Html.ActionLink("Edit", "ViewProduct", "Products", new { id = @item.ProductId.ToString() })</td>
+                    <td>@Html.ActionLink("Delete", "DeleteProduct", "Products", new { id = @item.ProductId.ToString() })</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+<script type="text/javascript">
+
+    $("#btnProducts").click(function () {
+       
+        window.location.href = '@Url.Action("ViewProduct", "Products")';
+    });
+</script>

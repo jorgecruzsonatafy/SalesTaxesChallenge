@@ -1,0 +1,14 @@
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\bin\Debug\netcoreapp3.1\Business_Logic.deps.json
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\bin\Debug\netcoreapp3.1\Business_Logic.dll
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\bin\Debug\netcoreapp3.1\Business_Logic.pdb
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\bin\Debug\netcoreapp3.1\Data_Access.dll
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\bin\Debug\netcoreapp3.1\Models.dll
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\bin\Debug\netcoreapp3.1\Data_Access.pdb
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\bin\Debug\netcoreapp3.1\Models.pdb
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\obj\Debug\netcoreapp3.1\Business_Logic.csprojAssemblyReference.cache
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\obj\Debug\netcoreapp3.1\Business_Logic.AssemblyInfoInputs.cache
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\obj\Debug\netcoreapp3.1\Business_Logic.AssemblyInfo.cs
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\obj\Debug\netcoreapp3.1\Business_Logic.csproj.CoreCompileInputs.cache
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\obj\Debug\netcoreapp3.1\Business_Logic.csproj.CopyComplete
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\obj\Debug\netcoreapp3.1\Business_Logic.dll
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Business_Logic\obj\Debug\netcoreapp3.1\Business_Logic.pdb

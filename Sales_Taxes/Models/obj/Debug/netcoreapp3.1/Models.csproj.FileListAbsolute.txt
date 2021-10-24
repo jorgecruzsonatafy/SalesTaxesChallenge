@@ -1,0 +1,8 @@
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Models\bin\Debug\netcoreapp3.1\Models.deps.json
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Models\bin\Debug\netcoreapp3.1\Models.dll
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Models\bin\Debug\netcoreapp3.1\Models.pdb
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Models\obj\Debug\netcoreapp3.1\Models.dll
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Models\obj\Debug\netcoreapp3.1\Models.pdb

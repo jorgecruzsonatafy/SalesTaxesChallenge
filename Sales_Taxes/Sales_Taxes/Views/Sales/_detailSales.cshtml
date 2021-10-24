@@ -1,0 +1,75 @@
+﻿@model Models.ResponseModel
+
+@{ string splitQ = "@"; }
+
+<header style="background-color:lightslategray; text-align:center; color:ghostwhite ">
+    <h4>Products, Taxes and Total</h4>
+</header>
+<div class="row">
+    <div class="form-group row">
+        <label asp-for="Taxes" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-4">
+            <input type="text" asp-for="Taxes" class="form-control" readonly />
+        </div>
+        <label asp-for="Total" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-4">
+            <input type="text" asp-for="Total" class="form-control" readonly />
+        </div>
+
+    </div>
+
+</div>
+<div class="row">
+    
+    <table id="tblProductList" class="table table-striped table-bordered">
+        <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+        
+        <tbody>
+            @if (Model.currentProducts != null)
+            {
+                @foreach (var item in Model.currentProducts)
+                {
+            <tr>
+                @if (item.Quantity > 1)
+                {
+                    <td scope="col">@item.Product: @item.Total (@item.Quantity @splitQ @item.PriceWithTaxes)</td>
+                }
+                else
+                {
+                    <td scope="col">@item.Product: @item.Total </td>
+                }                
+                <td><button onclick="RemoveProduct('@item.ProductKey')" class="btn btn-danger">Remove</button></td>
+            </tr>
+                }
+            }
+           
+
+        </tbody>
+    </table>
+</div>
+<script>
+    function RemoveProduct(productId) {
+       
+        $.ajax({
+            url: "/Sales/RemoveProduct",
+            type: "POST",
+            data: { id: productId },
+            success: function (response) {
+                $("#ShowProducts").html(response);
+                $("#ShowProducts").show();
+            },
+            error: function (error) {
+                console.log(error);
+                $("#lberrorMsg").text("We can´t connect with server! ");
+                $("#errorMsg").show();
+            }
+        });
+
+    }
+</script>
+
+
+

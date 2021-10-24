@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sales>
+  <Categories>
+    <CategoryId>10</CategoryId>
+    <CategoryName>books</CategoryName>
+    <Taxes>10</Taxes>
+  </Categories>
+  <Categories>
+    <CategoryId>500</CategoryId>
+    <CategoryName>food</CategoryName>
+    <Taxes>0</Taxes>
+  </Categories>
+  <Products>
+    <ProductId>20</ProductId>
+    <Description>Chocolate Bar</Description>
+    <ListPrice>0.85</ListPrice>
+    <Category>Food</Category>
+    <IsImported>false</IsImported>
+  </Products>
+  <Products>
+    <ProductId>10</ProductId>
+    <Description>Book</Description>
+    <ListPrice>12.49</ListPrice>
+    <Category>Books</Category>
+    <IsImported>False</IsImported>
+  </Products>
+  <Products>
+    <ProductId>30</ProductId>
+    <Description>Music CD</Description>
+    <ListPrice>14.99</ListPrice>
+    <Category></Category>
+    <IsImported>False</IsImported>
+  </Products>
+  <Products>
+    <ProductId>40</ProductId>
+    <Description>Imported box of chocolates</Description>
+    <ListPrice>10</ListPrice>
+    <Category>Food</Category>
+    <IsImported>True</IsImported>
+  </Products>
+  <Products>
+    <ProductId>50</ProductId>
+    <Description>Imported bottle of perfume</Description>
+    <ListPrice>47.5</ListPrice>
+    <Category></Category>
+    <IsImported>True</IsImported>
+  </Products>
+  <Products>
+    <ProductId>60</ProductId>
+    <Description>Imported bottle of perfume2</Description>
+    <ListPrice>27.99</ListPrice>
+    <Category></Category>
+    <IsImported>True</IsImported>
+  </Products>
+  <Products>
+    <ProductId>70</ProductId>
+    <Description>Bottle of perfume</Description>
+    <ListPrice>18.99</ListPrice>
+    <Category></Category>
+    <IsImported>False</IsImported>
+  </Products>
+  <Products>
+    <ProductId>80</ProductId>
+    <Description>Packet of headache pills</Description>
+    <ListPrice>9.75</ListPrice>
+    <Category>Medical</Category>
+    <IsImported>False</IsImported>
+  </Products>
+  <Products>
+    <ProductId>90</ProductId>
+    <Description>Imported box of chocolates</Description>
+    <ListPrice>11.25</ListPrice>
+    <Category>Food</Category>
+    <IsImported>True</IsImported>
+  </Products>
+  <Sale>
+    <ProductKey>imported bottle of perfume2true27.99</ProductKey>
+    <Product>Imported bottle of perfume2</Product>
+    <Quantity>1</Quantity>
+    <Taxes>4.2</Taxes>
+    <PriceWithTaxes>32.19</PriceWithTaxes>
+    <Total>32.19</Total>
+  </Sale>
+  <Sale>
+    <ProductKey>bottle of perfumefalse18.99</ProductKey>
+    <Product>Bottle of perfume</Product>
+    <Quantity>1</Quantity>
+    <Taxes>1.9</Taxes>
+    <PriceWithTaxes>20.89</PriceWithTaxes>
+    <Total>20.89</Total>
+  </Sale>
+  <Sale>
+    <ProductKey>packet of headache pillsmedicalfalse9.75</ProductKey>
+    <Product>Packet of headache pills</Product>
+    <Quantity>1</Quantity>
+    <Taxes>0</Taxes>
+    <PriceWithTaxes>9.75</PriceWithTaxes>
+    <Total>9.75</Total>
+  </Sale>
+</Sales>

@@ -1,0 +1,12 @@
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\bin\Debug\netcoreapp3.1\Data_Access.deps.json
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\bin\Debug\netcoreapp3.1\Data_Access.dll
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\bin\Debug\netcoreapp3.1\Data_Access.pdb
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\bin\Debug\netcoreapp3.1\Models.dll
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\bin\Debug\netcoreapp3.1\Models.pdb
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\obj\Debug\netcoreapp3.1\Data_Access.csprojAssemblyReference.cache
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\obj\Debug\netcoreapp3.1\Data_Access.AssemblyInfoInputs.cache
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\obj\Debug\netcoreapp3.1\Data_Access.AssemblyInfo.cs
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\obj\Debug\netcoreapp3.1\Data_Access.csproj.CoreCompileInputs.cache
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\obj\Debug\netcoreapp3.1\Data_Access.csproj.CopyComplete
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\obj\Debug\netcoreapp3.1\Data_Access.dll
+C:\DEV\2019\SalesTaxes\Sales_Taxes\Data_Access\obj\Debug\netcoreapp3.1\Data_Access.pdb

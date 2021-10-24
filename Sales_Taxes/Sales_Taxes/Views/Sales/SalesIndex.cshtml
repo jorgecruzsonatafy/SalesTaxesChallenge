@@ -1,0 +1,146 @@
+﻿@model Models.SalesModel
+
+<header style="background-color:lightslategray; text-align:center; color:ghostwhite ">
+    <h4>Sales</h4>
+</header>
+
+<form>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group row ">
+                <label asp-for="ProductId" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-4">
+                    @Html.DropDownListFor(m => m.ProductId, Model.ListProducts, "--Select One Product--", new { @class = "form-control col-sm-4 ", @id = "selectPrductId" })
+                </div>
+                <label asp-for="Description" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-4">
+                    <input type="text" asp-for="Description" class="form-control" readonly />
+                </div>
+
+            </div>
+
+            <div class="form-group row ">
+                <label asp-for="Category" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-4">
+                    <input type="text" asp-for="Category" class="form-control" readonly />
+                </div>
+                <label asp-for="Price" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-4">
+                    <input type="text" asp-for="Price" class="form-control" readonly />
+                </div>
+
+            </div>
+            <div class="form-group row ">
+                <label asp-for="IsImported" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-2">
+                    <input type="checkbox" asp-for="IsImported" checked onclick="javascript: return false;" />
+                </div>
+
+            </div>
+
+            <div class="form-group row ">
+                <div class="col-sm-6">
+                    <input type="button" class=" btn btn-primary" value="Add" id="btnAddProduct" />
+                </div>
+                <div class="col-sm-6">
+                    <input type="button" class=" btn btn-info" value="New Sale" id="btnNewSale" />
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+</form>
+<br />
+<div id="ShowProducts"></div>
+
+<script>
+    $(function () {
+
+    });
+
+    $("#selectPrductId").change(function () {
+        findProdutct();
+    });
+
+    $("#btnAddProduct").click(function () {       
+        addProduct();
+    });
+
+    $("#btnNewSale").click(function () {
+        newSale();
+    });
+
+    var findProdutct = function () {
+        var id = $("#selectPrductId").val();
+       
+
+        $.ajax({
+            url: "/Sales/GetProductInfo",
+            type: "POST",
+            data: { productId: id },
+            success: function (response) {
+                if (response.success) {
+                    console.log(response)
+                    $("#Description").val(response.description);
+                    $("#Category").val(response.category);
+                    $("#IsImported").prop("checked", response.isImported);
+                    $("#Price").val(response.price);
+
+                } else {
+                    $("#lberrorMsg").text("We can´t connect with server! ");
+                    $("#errorMsg").show();
+                }
+            },
+            error: function (error) {
+                console.log(error);
+                $("#lberrorMsg").text("We can´t connect with server! ");
+                $("#errorMsg").show();
+            }
+        })
+
+    };
+
+    var addProduct = function () {
+        var dataForm = {
+            productId: parseInt($("#selectPrductId").val()),
+            description: $("#Description").val(),
+            listPrice: parseFloat($("#Price").val()),
+            category: $("#Category").val(),
+            isImported: $('#IsImported').is(':checked')
+        };
+               
+        $.ajax({
+            url: "/Sales/AddProduct",
+            type: "POST",
+            data: dataForm,
+            success: function (response) {
+                $("#ShowProducts").html(response);
+                $("#ShowProducts").show();
+            },
+            error: function (error) {
+                console.log(error);
+                $("#lberrorMsg").text("We can´t connect with server! ");
+                $("#errorMsg").show();
+            }
+        });
+    }
+
+    var newSale = function () {
+      
+
+        $.ajax({
+            url: "/Sales/NewSale",
+            type: "GET",            
+            success: function (response) {
+                $("#ShowProducts").html(response);
+                $("#ShowProducts").show();
+            },
+            error: function (error) {
+                console.log(error);
+                $("#lberrorMsg").text("We can´t connect with server! ");
+                $("#errorMsg").show();
+            }
+        });
+    }
+</script>
